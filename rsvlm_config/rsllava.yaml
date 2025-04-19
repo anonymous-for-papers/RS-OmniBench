@@ -1,0 +1,15 @@
+# values in this file could be modified
+answers_file: answer.jsonl
+answers_save_dir: /home/RS-LLaVA/answer
+chunk_idx: 0
+conv_mode: llava_v1
+data:
+- region_level_image_segmentation
+image_folder: ''
+model_base: /datadisk/evaluation/models/rsvlm/Intel/neural-chat-7b-v3-3
+model_path: /datadisk/evaluation/models/RS-llava-v1.5-7b-LoRA
+num_beams: 1
+num_chunks: 1
+question_file: tables/question.jsonl
+temperature: 0.2
+top_p: null

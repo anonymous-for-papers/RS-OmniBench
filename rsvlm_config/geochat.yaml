@@ -1,0 +1,15 @@
+# values in this file could be modified
+answers_save_dir: /data/geochat/demo_images/answer
+batch_size: 1
+chunk_idx: 0
+conv_mode: llava_v1
+data:
+  - image_level_image_classification_image_wide
+image_folder: ''
+model_base: null
+model_path: /home/datadisk/evaluation/models/geochat-7B
+num_beams: 1
+num_chunks: 1
+question_file: /data/***.tsv
+temperature: 0.2
+top_p: null
