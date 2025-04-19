@@ -1,0 +1,119 @@
+# values in this file could be modified
+accelerator: gpu
+adjust_norm: false
+alignment_dim: 768
+answers_save_dir: /home/lhrs/answer
+batch_size: 1
+bf16: true
+bits: 16
+config: null
+data:
+  - region_level_image_segmentation_image_wide
+data_path: null
+data_target: null
+data_type: HR
+double_quant: true
+dtype: float16
+enable_amp: true
+entity: pumpkinn
+epochs: 2
+eval:
+  dataset: AID
+fp16: false
+generate: false
+gpus: 0
+inf_sampler: false
+local_rank: null
+lora:
+  enable: false
+  lora_alpha: 256
+  lora_bias: none
+  lora_dropout: 0.05
+  lora_r: 128
+lr: 0.0002
+max_grad_norm: 0.3
+model_path: /datadisk/evaluation/models/LHRS-Bot/Stage2/FINAL.pt
+optimizer: adanp
+opts: null
+output: ./
+project: MaskIndexNet
+prompt_template: llava_llama_2
+quant_type: nf4
+rgb_vision:
+  arch: vit_large
+  attn_pooler:
+    num_attn_heads: 16
+    num_layers: 6
+    num_query: 144
+  input_patchnorm: false
+  input_size:
+    - 224
+    - 224
+  patch_dropout: 0.0
+  tune_pooler: true
+  vit_name: openai/clip-vit-large-patch14
+sar_vision:
+  activate: sigmoid
+  alpha: 0.2
+  arch: base
+  branch_temp: 0.07
+  decoder:
+    heads: 12
+    hidden_size: 768
+    layers: 12
+    mask_color: mean
+    mask_ratio: 0.6
+  focal_gamma: 1.0
+  in_chans: 2
+  input_size:
+    - 192
+    - 192
+  loss_weight: 1.0
+  n_queries: 256
+  online_temp: 0.1
+  reduction: none
+  residual: false
+  unmask_weight: 0.0
+  warmup_branch_temp: 0.04
+  warmup_branch_temp_epochs: 2
+schedule:
+  decay_epochs: 30
+  decay_rate: 0.1
+  gamma: 0.1
+  min_lr: 2.0e-05
+  multisteps: [ ]
+  name: cosine
+  warmup_epochs: 100
+  warmup_factor: 0.01
+  warmup_method: linear
+seed: 322
+stage: 0
+text:
+  bos_token_id: 1
+  eos_token_id: 2
+  hidden_act: silu
+  hidden_size: 4096
+  initializer_range: 0.02
+  intermediate_size: 11008
+  max_position_embeddings: 2048
+  num_attention_heads: 32
+  num_hidden_layers: 32
+  pad_token_id: 0
+  path: /datadisk/evaluation/models/Llama-2-7b-chat-hf
+  rms_norm_eps: 1e-5
+  tie_word_embeddings: false
+  use_cache: true
+  vocab_size: 32000
+transform:
+  input_size:
+    - 224
+    - 224
+  rand_aug: rand-m5-n2-mstd0.5-inc1
+tune_im_patch: false
+tune_im_start: false
+tune_rgb_bk: false
+tune_rgb_pooler: false
+use_checkpoint: false
+wandb: false
+wd: 0.0
+workers: 2

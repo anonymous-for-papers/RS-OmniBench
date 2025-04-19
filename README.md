@@ -9,8 +9,7 @@
 </p>
 
 ## <a id="news"></a>📢 News
-We are excited to announce that the dataset and code for this project will be made publicly available 
-immediately upon the acceptance of the paper. Stay tuned for updates!
+- `2025-04-19`: We have released the code. Please see [`quick start`](./quickstart.md) for a quick start guid.
 - `2025-04-16`: We have released sample examples for RS-OmniBench dataset covering **53 subtasks**, 
 which are available in the [`dataset`](./dataset) directory. For the description of the key fields in the dataset's TSV files, please refer to [`RS-OmniBench Dataset`](#OmniBench).  
 **The complete dataset will be made publicly available immediately upon the acceptance of the paper.**
@@ -72,8 +71,11 @@ This provides a clear overview of the structure and contents of the data.
 | `pre_answer`       | `pre_answer` is valid only when `negative=True`, representing the incorrect global distractor choice as described in the paper.           | `D`                                                         |
 
 ## <a id="quickstart"></a>🚀 Quick Start
-**📰 Important Notice:**  
-The full code and reproduction workflow will be made publicly available immediately upon the acceptance of the paper. Stay tuned for updates!
+Click [`quick start`](./quickstart.md) for a quick start guid.
+
+[//]: # (**📰 Important Notice:**  )
+
+[//]: # (The full code and reproduction workflow will be made publicly available immediately upon the acceptance of the paper. Stay tuned for updates!)
 
 [//]: # (To get started quickly, follow these steps:)
 
@@ -83,5 +85,10 @@ The full code and reproduction workflow will be made publicly available immediat
 [//]: # (2. Install the necessary dependencies)
 
 [//]: # (3. Run the example script)
+
+## 📜 Acknowledgment
+We sincerely express our gratitude to the creators of [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) for providing a suite of out-of-the-box tools 
+and implementing numerous advanced LVLMs. 
+Their selfless dedication and contributions have significantly supported our work and the community. Thank you!
 
 #### 🔝 [Back to Top](#top)

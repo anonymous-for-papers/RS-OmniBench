@@ -1,0 +1,8 @@
+# values in this file could be modified
+answers_save_dir: /***/VHM/answer_vqa
+conv_mode: v1
+data:
+  - image_level_image_classification_image_wide
+image_path: null
+model_name: VHM
+question: null
